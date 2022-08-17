@@ -1,18 +1,15 @@
-import React from "react"
+import React, { Fragment } from "react"
 import { Themed } from "theme-ui"
 
 /**
- * Change the content to add your own bio
+ * Shadow me to add your own bio content
  */
 
-export default function Bio() {
-  return (
-    <>
-      This is where <Themed.a href="http://example.com/">your name</Themed.a>
-      {` `}
-      goes.
-      <br />
-      Or whatever, you make the rules.
-    </>
-  )
-}
+
+const BioContent = () => (
+  <Fragment>
+    <Themed.a href="https://twitter.com/kasedac">@kasedac</Themed.a>
+  </Fragment>
+)
+
+export default BioContent
